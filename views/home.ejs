@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icons/grumixama.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Grumixama - o site de comida vegana</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <div>
+            <img class="logo-img" src="/images/logo.png">
+          </div>
+          <div class="logo-nome">
+            <span id="grumi">grumi</span><span id="xama">xama</span>
+          </div>
+        </a>
+      </div>
+        <h1 class="chamada">O site de comida vegana</h1>
+    </header>
+
+    <nav>
+      <input type="checkbox" id="nav-checkbox" name="toggle-menu">
+      <label for="nav-checkbox">  <img id="menuHamb" src="/icons/menu.png"> </label>
+      <label for="nav-checkbox" >  <img id="menuClose" src="/icons/close.png"> </label>
+      <div class="menu">
+        <ul class="menu-nav">
+          <li id="home"> <a style="font-weight:bold;" href="/">Home</a> </li>
+          <li> <a href="/receitas">Todas as receitas</a> </li>
+          <li> <a href="/cafe-da-manha">Café da manhã</a> </li>
+          <li> <a href="/lanches-molhos">Lanches e molhos</a> </li>
+          <li> <a href="/almoco-janta">Almoço e Janta</a> </li>
+          <li> <a href="/blog">Blog</a> </li>
+          <li>
+            <form class="search" method="post">
+              <input type="text" name="search" class="search-field">
+              <input type="submit" class="btn-search" name="procurar" value="">
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <section class="banner">
+      <h1>hello!!</h1>
+        <% for(let receita of receitas){%>
+              <p><%=receita.postagem.titulo%></p>
+              <%}%>
+    </section> -->
+
+  </body>
+</html>

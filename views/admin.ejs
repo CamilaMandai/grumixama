@@ -1,0 +1,15 @@
+ <%for(let p of blogposts){%>
+  <p><%=p.titulo%></p>
+<%}%>
+
+<%for(let p of receitas){%>
+  <p><%=p.postagem.titulo%></p>
+<%}%>
+
+
+<a href="/blog/new">Criar post do blog</a>
+<a href="/receitas/new">Criar receita</a>
+
+<form action="/admin/logout" method="post">
+  <input type="submit" value="Logout">
+</form>

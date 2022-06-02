@@ -1,0 +1,220 @@
+*{
+  margin:auto;
+  --primary-font: 'Cormorant Garamond', serif;
+  --secondary-font: 'Montserrat', sans-serif;
+  --success: #60CB78;
+  --sucess-login: #14C928;
+  --info:#604990;
+  --info-secondary: #A696CA;
+  --text-color: #000000;
+  --text-logo: 'Indie Flower', cursive;
+  --cards-background: #EEEEEE;
+}
+
+
+
+
+a{
+  text-decoration: none;
+      color:var(--text-color);
+}
+
+
+/* HEADER com logo*/
+.logo{
+  width: 40%;
+  text-align: center;
+  position: absolute;
+  top:20px;
+  left:20px;
+}
+
+.logo-nome{
+  letter-spacing: 0.2rem;
+}
+
+.logo-img{
+  height:63.67px;
+  margin-right: 1px;
+}
+
+.logo a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chamada{
+  font-size: 15px;
+  letter-spacing: 0.3rem;
+  font-family: var(--primary-font);
+  text-align: center;
+  width: 100%;
+  font-weight: normal;
+  margin-top: 7rem;
+}
+
+/* Menu de atalhos */
+
+nav{
+  padding-top:30px;
+  width: 70%;
+  /* border: 1px solid; */
+  padding-bottom: 30px;
+  position: absolute;
+  right: 0;
+  background-color: white;
+}
+
+nav li{
+  list-style-type: none;
+}
+
+.menu li{
+  margin-left: 5%;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  /* line-height: 52px; */
+}
+
+.menu{
+  display: none;
+}
+
+.menu-nav{
+  background-color: white;
+  display: flex;
+  /* display: none; */
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap:2rem;
+  font-family: var(--secondary-font);
+  position: relative;
+  top: -7rem;
+}
+
+#grumi{
+  color:#150734;
+  font-size: 20px;
+  font-family: var(--text-logo);
+}
+
+#xama{
+  font-size:20px;
+  color:#1E5324;
+  font-family:var(--primary-font)
+}
+
+.search-field{
+  width: 154px;
+  border-radius:5px;
+  background: #FFFFFF;
+  border: 1px solid #A9A9A9;
+  box-sizing: border-box;
+  height: 1.8rem;
+  margin-right: 5px;
+}
+
+.btn-search{
+  background-color: white;
+  background-image: url(/icons/loupe.png);
+  background-size: cover;
+  height: 1.2rem;
+  width: 1.2rem;
+  border: none;
+}
+
+#menuHamb, #menuClose{
+  /* display: none; */
+  height: 38px;
+  position: absolute;
+  right:20px;
+  top: -95px;
+}
+
+#menuClose{
+  display: none;
+  height: 20px;
+  right: 30px;
+  z-index:2
+}
+
+#nav-checkbox{
+  display: none;
+}
+
+#nav-checkbox:checked ~ .menu{
+  display:block;
+}
+
+#nav-checkbox:checked ~ label img#menuClose{
+  display: block;
+}
+
+#nav-checkbox:checked ~ label img#menuHamb{
+  display: none;
+}
+
+@media only screen and (min-width:750px){
+  nav{
+    width: 100%;
+  }
+  .chamada{
+    font-size: 30px;
+    line-height: 52px;
+    letter-spacing: 0.8rem;
+  }
+  .logo{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+  }
+  .logo-img{
+    height: 80px;
+  }
+  #menuHamb{
+    display: none;
+  }
+  .menu{
+    display:block;
+  }
+  .menu-nav{
+    /* background-color: green; */
+    flex-direction: row;
+    /* align-items: center; */
+    top:2rem;
+    width: 100%;
+    border-top:1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+  }
+  .menu-nav a{
+    font-size: 13px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .menu-nav li{
+    margin-left: 0;
+    margin-right:auto;
+  }
+  #home{
+    display: none;
+  }
+  .btn-search{
+    position: relative;
+    left:-2.2rem;
+    top:0.3rem;
+  }
+
+}
+
+/* Banner */
+.banner{
+  width: 100%;
+  position: relative;
+  top:40px;
+}

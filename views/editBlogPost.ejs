@@ -1,0 +1,25 @@
+<h1>Editar</h1>
+
+
+
+<form class="" action="/blog/<%=post._id%>?_method=PUT" method="post">
+  <div class="">
+    <input type="text" name="titulo" value="<%=post.titulo%>">
+  </div>
+  <div class="">
+  <input type="text" name="subtitulo" value="<%=post.subtitulo%>">
+</div><div class="">
+  <textarea name="descricao" rows="8" cols="80"><%=post.descricao%></textarea>
+  </div><div class="">
+  <input type="text" name="fotoUrl" value="<%=post.fotoUrl%>">
+  </div>
+  <div class="">
+  <input type="text" name="data" value="<%=post.data%>">
+  </div>
+  <div class="">
+  <input type="text" name="tags" value="<%=post.tags%>">
+  </div><div class="">
+  <input type="text" name="categoria" value="<%=post.categoria%>">
+  </div>
+  <input type="submit" name="submit" value="Enviar">
+</form>
